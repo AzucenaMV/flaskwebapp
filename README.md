@@ -1,21 +1,14 @@
 # flaskwebapp
-This a website app created with Flask in Google Cloud Platform. The README file contains all the instructions to build it from scratch or you can also copy the docker image.
-
-I recently learned how to start using Flask and deploying in a Cloud environment. This time I want to add one more step: Docker containers. 
-
-This tutorial is a step by step guide for building the website app. It assumes that you already have an account in GCP.
+This a website app created with Flask in Google Cloud Platform. The README file contains all the instructions to build it from scratch or you can also copy the docker image. This is a step by step guide for building the website app. It assumes that you already have an account in GCP.
 
 Create a new project
-
-
+![alt text](https://ibb.co/W69Bc2S)
 
 Provide a name for your project
+![alt text](https://ibb.co/mGqKLf9)
 
-
-Make sure you are working your newly created project: 
-
-
-Click on activate cloud shell
+Make sure you are working your newly created project and click on activate cloud shell
+![alt text](https://ibb.co/P6xyFdT)
 
 Accept the terms
 
@@ -28,10 +21,12 @@ Create and activate a virtualenv to test your app locally
 
 Click on launch editor
 
-
+![alt text](https://ibb.co/tpmtPfJ)
 
 Create a new folder for your project
-
+```
+>>mkdir flaskwebapp
+```
 
 Create a main.py file
 
@@ -375,7 +370,7 @@ Paste :
 
 The structure of your directory should look similar to this
 
-
+![alt text](https://ibb.co/dLDZdf8)
 
 Make sure you are inside your virtualenv and test it!
 ```
