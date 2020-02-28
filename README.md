@@ -117,8 +117,8 @@ Paste :
     <div class = "home">
     <h1> Web App Using Flask </h1>
     <h4> Welcome! </h4>
-    <p> I created this portfolio website using Flask and Google Cloud Platform. <br>If you want
-        to learn how to create it please see this repo in github or you can copy the Docker image.</p>
+    <p> I created this portfolio website using Flask, Docker containers and Google Cloud Platform. <br>If you want
+        to learn how to create it please see this repo in <a href ='https://github.com/AzucenaMV/flaskwebapp'>github</a></p>
     </div>
     {% endblock %}
   </body>
@@ -412,18 +412,17 @@ path = "templates/CV_LAMV_Duke_16022020.pdf"
 
 That’s it!
 
->>gcloud builds submit --tag gcr.io/PROJECT-ID/helloworld
+Now it is time to deploy it 
 
+Build the image and change PROJECT_ID to match with yours
+```
+>>gcloud builds submit --tag gcr.io/PROJECT_ID/flaskwebapp
+```
+Before deploying make sure that you have the  Cloud Build and Cloud Run APIs enabled:
 
-Skip this part:
-#Build the image and don’t forget the dot!
-#>>docker build --tag flaskwebapp .
-#It should look like this
-
-
-This will run the image as a container:
->>do
---allow tcp:80
+```
+gcloud run deploy --image gcr.io/PROJECT_ID/flaskwebapp --platform managed
+```
 
 
 This content was adapted from the following sites:
